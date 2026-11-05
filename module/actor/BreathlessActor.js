@@ -301,7 +301,7 @@ export class BreathlessActor extends Actor {
         foundry.applications.handlebars.renderTemplate(template, data).then((dlg) => {
             ChatMessage.create({
                 user:game.user_id,
-                type:CONST.CHAT_MESSAGE_STYLES.ROLL,
+                // type:CONST.CHAT_MESSAGE_STYLES.ROLL,
                 rolls: data.roll_object,
                 speaker: ChatMessage.getSpeaker(),
                 content: dlg
