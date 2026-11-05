@@ -20,11 +20,11 @@ Hooks.once("init", () => {
     CONFIG.Actor.documentClass = BreathlessActor;
     CONFIG.Item.documentClass = BreathlessItem;
 
-    Actors.unregisterSheet("core", ActorSheet);
-    Items.unregisterSheet("core", ItemSheet);
+    foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
+    foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
 
-    Actors.registerSheet("breathless", BreathlessActorSheet, { makeDefault: true });
-    Items.registerSheet("breathless", BreathlessItemSheet, { makeDefault: true });
+    foundry.documents.collections.Actors.registerSheet("breathless", BreathlessActorSheet, { makeDefault: true });
+    foundry.documents.collections.Items.registerSheet("breathless", BreathlessItemSheet, { makeDefault: true });
     
     // Register system settings
     registerSettings();
