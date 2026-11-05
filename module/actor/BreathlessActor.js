@@ -41,7 +41,11 @@ export class BreathlessActor extends Actor {
             return;
         }
 
-        let r = await new Roll("1"+die).evaluate({ async: true });
+        // let r = await new Roll("1"+die).evaluate({ async: true });
+        let r = new Roll('1'+die);
+        await r.roll();
+        await game?.dice3d?.showForRoll(r);
+
         let result = r.total;
 
         // step the die value down until reset
@@ -86,7 +90,11 @@ export class BreathlessActor extends Actor {
         let outcome = "";
 
         // if NOT used, then roll dice and toggle to "used"
-        let r = await new Roll("1d12").evaluate({ async: true });
+        // let r = await new Roll("1d12").evaluate({ async: true });
+        let r = new Roll('1d12');
+        await r.roll();
+        await game?.dice3d?.showForRoll(r);
+
         let result = r.total;
         let die = "d12";
 
@@ -295,7 +303,7 @@ export class BreathlessActor extends Actor {
         renderTemplate(template, data).then((dlg) => {
             ChatMessage.create({
                 user:game.user_id,
-                type:CONST.CHAT_MESSAGE_TYPES.ROLL,
+                type:CONST.CHAT_MESSAGE_STYLES.ROLL,
                 rolls: data.roll_object,
                 speaker: ChatMessage.getSpeaker(),
                 content: dlg

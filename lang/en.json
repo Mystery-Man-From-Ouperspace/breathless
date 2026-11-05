@@ -4,6 +4,10 @@
             "pc": "Character",
             "npc": "NPC"
         },
+        "Item": {
+            "skill": "Skill",
+            "gear": "Gear"
+        },
         "Item.item": "Item"
     },
     
@@ -129,4 +133,5 @@
             "hint": "Check this if the character's special ability does NOT trigger a dice roll"
         }
     }
+
 }

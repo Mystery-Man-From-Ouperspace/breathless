@@ -1,8 +1,8 @@
 /**
  * Extend the basic ActorSheet with some very simple modifications
- * @extends {ActorSheet}
+ * @extends foundry.appv1.sheets.ActorSheet
  */
-export class BreathlessActorSheet extends ActorSheet {
+export class BreathlessActorSheet extends foundry.appv1.sheets.ActorSheet {
 
     constructor(...args) {
         super(...args);
@@ -19,7 +19,7 @@ export class BreathlessActorSheet extends ActorSheet {
 
     /** @override */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ['breathless', 'csbg', 'sheet', 'actor', 'actor-sheet'],
             left:120,
             tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "main" }],

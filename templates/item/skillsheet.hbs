@@ -7,21 +7,11 @@
     <div class="dice flexrow">
         <h4>{{localize "breathless.dialogs.labels.initial_die"}}</h4>
         <select name="system.initial" id="initial">
-            {{#select initial}}
-                <option value="d4">{{localize "breathless.item.d4"}}</option>
-                <option value="d6">{{localize "breathless.item.d6"}}</option>
-                <option value="d8">{{localize "breathless.item.d8"}}</option>
-                <option value="d10">{{localize "breathless.item.d10"}}</option>
-            {{/select}}
+            {{selectOptions skillchoices selected=initial valueAttr="key" labelAttr="label" localize=true}}
         </select>
         <h4>{{localize "breathless.dialogs.labels.current_die"}}</h4>
         <select name="system.current" id="current">
-            {{#select current}}
-                <option value="d4">{{localize "breathless.item.d4"}}</option>
-                <option value="d6">{{localize "breathless.item.d6"}}</option>
-                <option value="d8">{{localize "breathless.item.d8"}}</option>
-                <option value="d10">{{localize "breathless.item.d10"}}</option>
-            {{/select}}
+            {{selectOptions skillchoices selected=current valueAttr="key" labelAttr="label" localize=true}}
         </select>
     </div>
 </form>
