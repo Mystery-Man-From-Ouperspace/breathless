@@ -7,7 +7,7 @@ export class BreathlessActorSheet extends foundry.appv1.sheets.ActorSheet {
     constructor(...args) {
         super(...args);
     
-        let width = 775;
+        let width = 815;
         let height = 710;
         if (this.actor.type == 'npc') {
             width = 310;
