@@ -57,7 +57,7 @@
     "breathless.chatMessage.layLowUsed": "<b>NOTE</b>: {pcName} used Lay Low Awhile.",
     "breathless.error.lootCheck": "There is no Loot table set up. Create a new Rollable Table called \"Loot\", then try again.",
     
-    "breathless.interface.warning.maxstorage": "You can't add anything else to your {storeName}.",
+    "breathless.interface.warning.maxstorage": "You can't add anything else to your {storName}.",
 
     "breathless.ActorNotes": "Notes",
     "breathless.npc": {
