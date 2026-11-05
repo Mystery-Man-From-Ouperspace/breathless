@@ -44,7 +44,6 @@ export class BreathlessActor extends Actor {
         // let r = await new Roll("1"+die).evaluate({ async: true });
         let r = new Roll('1'+die);
         await r.roll();
-        await game?.dice3d?.showForRoll(r);
 
         let result = r.total;
 
@@ -93,7 +92,6 @@ export class BreathlessActor extends Actor {
         // let r = await new Roll("1d12").evaluate({ async: true });
         let r = new Roll('1d12');
         await r.roll();
-        await game?.dice3d?.showForRoll(r);
 
         let result = r.total;
         let die = "d12";
