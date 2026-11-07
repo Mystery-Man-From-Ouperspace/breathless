@@ -6,7 +6,7 @@ export class BreathlessItemSheet extends foundry.appv1.sheets.ItemSheet {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ['breathless', 'sheet', 'actor', 'actor-sheet'],
+            classes: ['breathless', 'sheet', 'actor', 'actor-sheet', 'item-sheet'],
             width: 400,
             left:120,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheetbody", initial: "main"}],
