@@ -31,12 +31,12 @@ An unofficial, community-supported system for playing the Breathless TTRPGs (Cre
 - Ability add and use Gear, dice type will change with use
 - System settings to help modify the sheet to match different versions of Breathless games
 - Simple NPC Sheet
+- Dark version of the character sheet, use settings to change
 
 ## To Be Done
 
 - Create a sample Loot table
 - Add a few Gasps as settings
-- Add a Dark version of the character sheet, use settings to change
 
 ## How to Install
 
