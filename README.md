@@ -45,6 +45,8 @@ You can install the latest released version of the system by using this manifest
 [Instructions](https://foundryvtt.com/article/tutorial/)
 Link: https://github.com/waryjack/breathless/releases/latest/download/system.json
 
+MMFO version (compatible v13 & v14): Click `Code > Download ZIP` then install manually into Foundry VTT.
+
 ## Content License Note
 
 This work is based on ["Breathless"](https://fari.community/creators/fari-rpgs/projects/breathless), product of [Fari RPGs](https://farirpgs.com/), developed and authored by René-Pier Deshaies-Gélinas, and licensed for our use under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
